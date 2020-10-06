@@ -1,5 +1,5 @@
 # Topic-one
-An exerci<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,28 +7,47 @@ An exerci<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>前端招新答题卷</title>
     <style>
-        .q4-header,
+        .q4-header {border:pink;
+                    width: 100%;
+                    height: 60px;
+                    margin:0 auto;
+                    }
         .q4-footer {
             box-sizing: border-box;
             padding: 15px;
+            border:pink 5px solid;
+            width: 100px;
+            height: 60px;
+            margin: 0 auto;
         }
 
         .q4-body {
             overflow: hidden;
             clear: both;
+            width: 500px;
+            height:225px;
+            margin: 0 auto;
         }
-
-        .left,
-        .right {
-            margin: 20px 0;
-            box-sizing: border-box;
-            width: 180px;
-            padding: 30px;
+       
+        .left{
+            border:lightblue 5px solid;
+            width: 200px;
+            height:200px;
         }
+        .right{
+            border:lightblue 5px solid;
+            width: 200px;
+            height:200px;
+        } 
+    
+        .outter,.footer{
+            border: 5px solid pink;
+            height: 60px;
+            margin:0 auto;
+            line-height:100px;
+        } 
     </style>
 </head>
-
-
 <body>
     <div>
         <p>
@@ -36,56 +55,22 @@ An exerci<!DOCTYPE html>
             1. 中间部分水平居中, 文字水平居中, 边框为 5px lightblue
             2. 头部和尾部要文字水平居中, 高度60px, 边框为 5px 粉色
         </p>
+    </div>   
+    <div class="outter">
+        这里是头部
+    </div>
+    <div class="q4-body">
+        <body style="text-align: center;">
+        <div class="left" style="float:left;">经常遇到的布局</div>
+        <div class="right" style="float: right;">右边部分</div>
+        </body>>
+    </div>
+
+    <div class="footer">
+        <div >这里是尾部</div>
     </div>
     
-            <div class="outter">
-                <div align="center"vertical-align="middle">这里是头部</div>
-                </div>
-                <style>
-                div{
-                    border:5px solid #FFC0CB;
-                    widows: 100px
-                    height: 60px
-                    margin: 0auto;
-                    list-style: height 200px;
-                    border-color
-                }
-                </style>
-                </body>
-        </head>
-
-            <div class="q4-body">
-                <div class="left" style="display: inline-table;;">经常遇到的布局</div>
-                <div caless="right" style="display:inline-table;">右边部分</div>
-                
-                 
-            </div>
-            <head>
-                <meta charset="UTF-8">
-                <title>Document</title>
-                <style type="text/css">
-                      5261#content{
-                          border:solid #f00;
-                          margin:0auto;
-                          widows: 100px;
-                          height: 60px;
-                          border-width:5px;
-                          background: #ff0;
-                      }
-                </style>
-            <div align="center"vertical-align="middle">这里是尾部</div>
-        </div>
-        <style>
-            div{
-                border:1px solid #000000
-                widows: 60px
-                height: 60px
-                margin:0auto;
-                line-height:200px
-                color blue
-            }
-        </style>
-    </div>
+    
 </body>
 
 </html>

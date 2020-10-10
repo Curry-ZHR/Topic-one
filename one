@@ -136,13 +136,13 @@
 </form>
 兴趣<br>
 计算机
-<input type="checkbox" name="computer" value="computer"/>
+<input type="checkbox" name="programe" value="computer"/>
 数学
-<input type="checkbox" name="math" value="math"/>
+<input type="checkbox" name="programe" value="math"/>
 化学：
-<input type="checkbox" name="chemistry" value="chemistry"/>
+<input type="checkbox" name="programe" value="chemistry"/>
 物理：
-<input type="checkbox" name="physicis" value="physicis"/>
+<input type="checkbox" name="programe" value="physicis"/>
 </br>
 
 <html>

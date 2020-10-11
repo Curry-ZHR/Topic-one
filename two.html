@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>第一个练习文档</title>
+        <style type="text/css">
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        ul li{
+            list-style: none;   /*去除默认黑圈 列表样式：无 */
+            float: left;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            position: relative;
+        }
+        li.item:before{
+            content:"";
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid pink;
+
+        }
+        li.item:hover：before{
+            width: 100%;
+        }
+        </style>
+    <body>
+        <ul class="menu">
+            <li class="item">首页
+            </li>
+            <li class="item">学院概况</li>
+            <li class="item">机构设置</li>
+            <li class="item">院介绍</li>
+            <li class="item">新闻中心</li>
+        </ul>
+    </body>
+
+    </head>
+</html>

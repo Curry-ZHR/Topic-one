@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+    #header{background-color: #cdd3de;
+    }
+    #content{
+        background-color: #f0b7c0;
+        overflow: hidden;
+    }
+    #sidebar{
+        background-color: #f0d2e6;width: 35%;height: 40px;
+    }
+    #sidebar2{
+        background-color: #c3eedf;width: 35%;height: 40px;
+    }
+    #footer{
+        background-color: #f7f9c2;width: 100%;
+    }
+    
+    </style>
+</head>          /*关键是要知道把clear:both运用到哪里去*/
+                 /*疑问：为什么要先使用浮动布局然后再去除浮动？不可以直接不采用浮动布局吗？*/
+    <style>
+    .page::after{content: "";display:block;clear: both;
+    </style>         
+    <div id="page">
+        <div id="header"><h1>这里是标题</h1></div>
+        <div id="sidebar" style="float: right;">
+            <p>侧边栏1</p>
+        </div>
+        <div id="sidebar2" style="float: left;">
+            <p>侧边栏2</p>
+        </div>
+        <div id="content">
+            <p>这里是一些文字</P>
+            <p>再来一大段文字</P>
+            <p>地图投影</p>
+        </div>
+        <div id="footer"><p>没人关注的页脚</P></div>
+            </div>
+    </div>
+    
+</html>

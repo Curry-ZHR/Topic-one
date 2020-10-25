@@ -1,0 +1,93 @@
+/*要把大的父级元素相对于页面居中，再把子级元素相对于父级元素居中*/
+
+#boxa{
+    display: flex;
+    flex-direction: row;
+    line-height: 30px;
+    margin: 10px;
+    width: auto;
+    margin: 0 auto;
+}
+.left:hover{
+    content: "";
+    position: relative;
+    border-top:2px solid red;
+}
+.left{
+    border: 10px none;
+    margin: 20px;
+}
+.center:hover{
+    content:"";
+    position: relative;
+    border-top:2px solid red;
+}
+.center{
+    border: 10px none;
+    margin: 20px;
+}
+.right{
+    border: 2px solid red;
+    margin: 10px;
+    height: 30px;
+    width: 220px;
+}
+.logout{
+    padding: 4px,4px;
+    background-color: green;
+    font-size: 20px;
+    border: 10px none;
+    margin: 20px;
+}
+
+.circle{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    text-align: center;
+    line-height: 100px; 
+    /* 文字垂直居中时写到和高一样大 text-align: ;是文本水平居中*/
+    font-size: 40px;
+    margin: 0 auto;   /*先对父级设置宽高，然后给子级margin即可*/
+}
+.page{
+    display: inline-block;  /*哪一级要想在同一排，就在哪一级的内部直接写display:inline-block。这个是行内元素*/
+    width: 200px;
+    height: 200px;
+    
+}
+.jia{
+    border: 2px solid green;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #fff;
+
+}
+.h3{
+    text-align: center;
+}
+.h2{
+    text-align: center;
+}
+.h5{
+    text-align: center;
+    color:greenyellow
+}
+.nav{
+    width:800px;
+    height:250px;
+    margin: 20px;
+}
+.A{
+    border: 2px solid red;
+    background-color: red;
+    display: inline-block;
+    width: 150px;
+    height: 80px;
+    vertical-align: middle; /*垂直对齐元素设置*/
+    
+}

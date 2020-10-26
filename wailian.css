@@ -1,35 +1,65 @@
 /*要把大的父级元素相对于页面居中，再把子级元素相对于父级元素居中*/
-
+body{
+    background-color: aliceblue;
+}
 #boxa{
     display: flex;
-    flex-direction: row;
-    line-height: 30px;
+    justify-content: center;
+    align-items: center; /*项目位置情况？*/
     margin: 10px;
-    width: auto;
-    margin: 0 auto;
 }
+#biaoge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(248, 244, 244);
+    width: 800px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.container{
+    border: 2px solid rgba(252, 248, 248, 0);
+    display: flex;
+    justify-content: center;     /*这里的flex布局和对边框使用margin 0 auto一个都不能少！*/
+    align-items: center;
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+
 .left:hover{
     content: "";
     position: relative;
-    border-top:2px solid red;
+    border-top:2px solid red; /*字体上部出现横线，还可以用font-size调节字体大小*/
 }
 .left{
     border: 10px none;
     margin: 20px;
 }
+
 .center:hover{
     content:"";
     position: relative;
     border-top:2px solid red;
+    margin: 20px;
 }
 .center{
     border: 10px none;
     margin: 20px;
 }
 .right{
-    border: 2px solid red;
+    border: 2px solid rgba(253, 251, 251, 0);
     margin: 10px;
-    height: 30px;
+    height: 24px;
     width: 220px;
 }
 .logout{
@@ -41,16 +71,17 @@
 }
 
 .circle{
-    border-radius: 50%;
+    border: 2px solid green;
+    border-radius: 50% ;
     width: 100px;
     height: 100px;
-    background-color: green;
     text-align: center;
     line-height: 100px; 
     /* 文字垂直居中时写到和高一样大 text-align: ;是文本水平居中*/
     font-size: 40px;
     margin: 0 auto;   /*先对父级设置宽高，然后给子级margin即可*/
 }
+
 .page{
     display: inline-block;  /*哪一级要想在同一排，就在哪一级的内部直接写display:inline-block。这个是行内元素*/
     width: 200px;
@@ -68,7 +99,7 @@
 
 }
 .h3{
-    text-align: center;
+    text-align: center;      /*文本居中直接text-align即可，不像其他盒子模型需要使用flex布局或者float布局*/
 }
 .h2{
     text-align: center;
@@ -77,17 +108,32 @@
     text-align: center;
     color:greenyellow
 }
+
 .nav{
+    border: 2px solid rgba(255, 252, 252, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width:800px;
-    height:250px;
-    margin: 20px;
+    height:200px;
+    margin: 0 auto;
+    background-color: #fff;
 }
 .A{
-    border: 2px solid red;
-    background-color: red;
+    border: 2px solid rgba(255, 26, 26, 0.5);
+    background-color: rgb(228, 88, 88);
     display: inline-block;
     width: 150px;
     height: 80px;
-    vertical-align: middle; /*垂直对齐元素设置*/
+    display: flex;
+    justify-content: center;
+    align-items: center;                                   /*vertical-align: ;垂直对齐元素设置*/
+    margin: 0 auto;             /*为什么这里一定要是0 auto 四个盒子才会分开？*/
+    text-align: center;
+}
+.A:hover{
+    content: "";
+    position: relative;
+    background-color: red;
     
 }

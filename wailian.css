@@ -18,6 +18,10 @@ body{
     margin: 0 auto;
     background-color: #fff;
 }
+table{
+    border: 2px solid aquamarine;        /*怎么做到有一些表格带边框另一些不带边框？*/
+    border-collapse: collapse;    /*表格崩塌即为取消表格间隙 table跟用class命名的元素不同，对table进行修饰的时候不用加.*/
+}
 .container{
     border: 2px solid rgba(252, 248, 248, 0);
     display: flex;
@@ -42,7 +46,7 @@ body{
     border-top:2px solid red; /*字体上部出现横线，还可以用font-size调节字体大小*/
 }
 .left{
-    border: 10px none;
+    border-top: 2px solid aliceblue;
     margin: 20px;
 }
 
@@ -53,25 +57,25 @@ body{
     margin: 20px;
 }
 .center{
-    border: 10px none;
     margin: 20px;
+    border-top:2px solid  aliceblue ;       /*悬浮前把border-top的边线颜色改成与背景颜色一致，看起来就像没有边线， hover前后都加上border-top可以避免鼠标放上去的时候文字移动*/
 }
 .right{
-    border: 2px solid rgba(253, 251, 251, 0);
+    border: 1px solid red;
     margin: 10px;
-    height: 24px;
+    height: 23px;
     width: 220px;
 }
 .logout{
     padding: 4px,4px;
-    background-color: green;
+    background-color:  aquamarine;
     font-size: 20px;
     border: 10px none;
     margin: 20px;
 }
 
 .circle{
-    border: 2px solid green;
+    border: 2px solid  aquamarine;
     border-radius: 50% ;
     width: 100px;
     height: 100px;
@@ -88,8 +92,14 @@ body{
     height: 200px;
     
 }
+li:hover{
+    content: "";
+    position: relative;          /*应该对每一行文字分别用hover*/
+    color: red;
+}
 .jia{
-    border: 2px solid green;
+    margin: 0 auto;
+    border: 2px solid aquamarine;
     border-radius: 50%;
     width: 20px;
     height: 20px;
@@ -130,10 +140,36 @@ body{
     align-items: center;                                   /*vertical-align: ;垂直对齐元素设置*/
     margin: 0 auto;             /*为什么这里一定要是0 auto 四个盒子才会分开？*/
     text-align: center;
+    
 }
 .A:hover{
     content: "";
     position: relative;
     background-color: red;
     
+    
 }
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.788);
+    
+}
+.number{
+    color: red;
+    text-decoration: underline;       /*给文字加下划线：text-decoration(文档装饰): underline*/ 
+    font-size: 50px;    
+}
+.text{
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    height: 100px;
+    width: 140px;
+}
+.text:hover{
+    background-color: aquamarine;
+}
+

@@ -2,15 +2,14 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>学而</title>
-        <link href="./wailian.css" rel="stylesheet" type="text/css">
-
+        <title>重构学而页面</title>
+        <link href="./walian.css" rel="stylesheet" type="text/css">  <!--同一路径下就加./ 不同路径下写图片名字-->
 
     </head>
     <body >
         <div id="boxa">
-            <div>
-                <img src="Y_ZPPK~2YX$`A0)}F(%KKON.png" height="30px" width="60px">
+            <div>                                                   <!--图片命名要有规律-->
+                <img src="./img1.png" height="30px" width="60px">  <!--把图片和html文件放在一个路径之下后直接加./加名字 图片名字要修改 便于辨认-->
             </div>
             <div class="left">
                 首页
@@ -20,14 +19,14 @@
             </div>
             <div class="right">
                 <div id="search" style="width: 75%;float:left;">
-                    <input type="search" name="搜索">
+                    <input type="search" name="搜索"  style="border: 0px;"> <!--border:0px 可以去掉搜索框边线-->
                 </div>    
                 <div id="tupian" style="width: 25%;float: left;">
                     <img src="search.png" height="25px">
                 </div>    
             </div>
             <div>
-                <img src="9D5C%~Y0A{Y9NDG[FAM](LU.png" >
+                <img src="./img2.png" >
             </div>
             <div class="logout">
                 退出
@@ -35,7 +34,7 @@
         </div>
         <div id="boxb">
             <div class="header">
-                <img src="批注 2019-10-29 025409.png" height="400px" width="800px">
+                <img src="./img3.png" height="400px" width="800px">
             </div>
             <!--这是第一部分-->
             <div class="container">
@@ -43,13 +42,13 @@
                     <div class="circle">公</div>
                     <div class="word">
                         <ul>
-                            <li>界面与设计应用
-                                <span>房子</span>
+                            <li>界面与设计应用</br>
+                                <span>房子</span>   <!--span 为行内元素-->
                             </li>
-                            <li>java程序编程
+                            <li>java程序编程</br>
                                 <span>赵三金</span>
                             </li>
-                            <li>设计师的自我修养
+                            <li>设计师的自我修养</br>
                                 <span>分享课程</span>
                             </li>
                         </ul>
@@ -62,14 +61,14 @@
                     <div class="circle">通</div>
                     <div class="word">
                         <ul>
-                            <li>计算机基础
-                                <span>胡薇</span>
+                            <li>计算机基础</br>
+                                胡薇
                             </li>
-                            <li>植物观赏学基础
-                                <span>韩一尾</span>
+                            <li>植物观赏学基础</br>
+                                韩一尾
                             </li>
-                            <li>生活常识101
-                                <span>分享</span>
+                            <li>生活常识101</br>
+                                分享
                             </li>
                         </ul>
                     </div>
@@ -81,13 +80,13 @@
                     <div class="circle">素</div>
                     <div class="word">
                         <ul>
-                            <li>新生引导课堂
+                            <li>新生引导课堂</br>
                                 <span>开学季</span>
                             </li>
-                            <li>党课精神研讨课
+                            <li>党课精神研讨课</br>
                                 <span>分享课程</span>
                             </li>
-                            <li>专业方向
+                            <li>专业方向</br>
                                 <span>毕业生</span>
                             </li>
                         </ul>
@@ -100,13 +99,13 @@
                     <div class="circle">专</div>
                     <div class="word">
                         <ul>
-                            <li>影视广告摄影基础
+                            <li>影视广告摄影基础</br>
                                 <span>分享课程</span>
                             </li>
-                            <li>程序员的养成
+                            <li>程序员的养成</br>
                                 <span>赵多金</span>
                             </li>
-                            <li>如何让设计师改稿
+                            <li>如何让设计师改稿</br>
                                 <span>甲方</span>
                             </li>
                         </ul>
@@ -116,8 +115,7 @@
                     </div>
                 </div>
             </div>
-            <!--  -->
-            <script>/*这是第二部分*/</script>
+            <!-- 这是第二部分 --> 
             <div class="footer">
                <div class="h2"><h2>最热课程动态</h2></div>
             
@@ -125,59 +123,56 @@
                 <div id="biaoge">
                     <table border="1" solid>
                         <tr>
-                            <td>
-                                常勇
+                            <td span class="text">   <!--span作为行内元素 可以直接写在td行内 然后通过span用外联表来修饰行内部分-->
+                                    常勇<br/>
                                 《化学生活》
+                                
+                                
                             </td>
-                            <th>
-                                <color="red">
+                            <th span class="number">
+                                
                                 02
-                                </color>
+                            
                             </th>
-                            <td>
-                                张勇
+                            <td span class="text">
+                                张勇</br>
                                 《java语言程序设计》
+                            
                             </td>
-                            <th>
+                            <th span class="number">
                                 <color>
                                 04
                                 </color>
                             </th>
-                            <td>
-                                张国
+                            <td span class="text">
+                                张国</br>
                                 《计算机组装》
                             </td>
                         </tr>
                         <tr>
-                            <th>
-                                <color>
+                            <th span class="number">
                                 01
-                                </color>
                             </th>
-                            <td>
-                                李达
+                            <td span class="text">
+                                李达</br>
                                 《大学生语文》
                             </td>
-                            <th>
-                                <color>
+                            <th span class="number">
                                 03
-                                </color>
                             </th>
-                            <td>
-                                苏燕
+                            <td span class="text">
+                                苏燕</br>
                                 《视觉语言》
                             </td>
-                            <th>
-                                <color>
+                            <th span class="number">
                                 05
-                                </color>
                             </th>
                         </tr>
                     </table>
                 </div>
             </div>
-              <!---->
-            <script>/*这是第三部分*/</script>
+            
+            <!--这是第三部分-->
             <div class="last">
                 <div class="h3">
                     <h3>猜你喜欢课程</h3>
@@ -203,11 +198,12 @@
                     《三个代表》
                      韩一尾
                 </div>
+                
             </div>
 
         </div>
         <div class="bottom">
-            <img src="T2{4PN7XIF_${[8D%E$Z5}D.png">   <!--如果图片看不了怎么办？-->
+            <img src="./img5.png">   <!--如果图片看不了怎么办？-->
         </div>
         
     </body>

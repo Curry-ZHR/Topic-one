@@ -1,0 +1,83 @@
+#box1{
+    border: 2px solid red;
+    height: 50px;
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    margin: 0 auto;
+}
+.search{
+    margin: 0 auto;
+}
+.b{
+    margin: 10px;
+}
+.left{
+    border: 2px solid green;
+    height:800px;
+    width: 750px;
+    position: absolute;
+    left: 250px;
+}
+.right{
+    border: 2px solid blue;
+    height: 400px;
+    width: 250px;
+    position: absolute;
+    right: 250px;
+    
+}
+.middle{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid pink;
+    height: auto;
+    width: 600px;
+    
+    overflow-x: scroll;
+}
+.image{
+    margin: 10px;
+}
+.name{
+    display: flex;
+    flex-direction: row;
+}
+.center{
+    margin: 0px,10px;
+}
+.last{
+    color: cornflowerblue;
+    font-size: 15px;
+}
+.word{
+    font-size: 10px;
+    color: gray;
+}
+.zoom{
+    margin: 20px;
+}
+.color{
+    font-size: small;
+    font-style: grey;
+}
+.center{
+    border: 2px solid white;
+}
+.center:hover{
+    content: "";
+    font-style: red;
+    border-bottom: 2px solid red;
+}
+li:hover{
+    content: "";
+    position: relative;
+    color:red;
+}
+.file{
+    display: flex;
+    flex-direction: row;
+    color: blue;
+    
+}

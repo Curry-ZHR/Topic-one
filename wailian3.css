@@ -1,0 +1,101 @@
+#box1{
+    border: 0px solid red;
+    height: 50px;
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    margin: 0 auto;        /*用大的box圈住header，当box相对于整体居中时，header也会居中*/
+}
+.header{
+    width: 1000px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    z-index: 0;
+}
+
+.footer{
+    border: 2px solid palevioletred;
+    width: 1000px;
+    height: 2000px;
+    margin: 0 auto;
+}
+.search{
+    margin: 0 auto;
+    height: 20px;
+    width: 150px;
+    line-height: 45px;   /*直接用line-height对元素进行垂直范围内的调节*/
+}
+.b{
+    margin: 0px 20px 0px 10px;
+    line-height: 45px;
+}
+.left{
+    width: 730px;
+    border: 2px solid black;
+    float: left;            /*浮动清除文档流*/
+}
+.right{
+    border: 2px solid blue;
+    height: 400px;
+    width: 250px;
+    float: right;
+}
+.image{
+    margin: 0px 20px 0px 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px double pink;
+    overflow: hidden;
+    display: inline-flex;
+}
+.middle{
+    border: 2px solid pink;
+    height: 80px;
+    width: 730px;
+    overflow-x: scroll;    /*为什么设置的是x轴输出的时候既有x轴又有y轴？*/
+}
+
+.word1{
+    float: left;
+}
+.word1:hover{
+    content: "";
+    position: relative;
+    color:red;
+    clear: both;
+}
+.photo{
+    float: left;
+}
+.center{
+    float: left;
+}
+.last{
+    float:right;
+}
+.color{
+    font-size: x-small;
+    color: grey;
+}
+.color:hover{
+    content: "";
+    position: relative;
+    border-bottom: 2px solid red;
+}
+.word{
+    font-size: xx-small;
+    color: rgba(128, 128, 128, 0.397);
+}
+.file{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: blue;
+    
+}
+

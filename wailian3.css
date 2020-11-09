@@ -116,7 +116,133 @@
     font-size: larger;
     color: darkgray;
     margin: 10px;
+}#box1{
+    border: 0px solid red;
+    height: 50px;
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    margin: 0 auto;        /*用大的box圈住header，当box相对于整体居中时，header也会居中*/
 }
+.header{
+    width: 1000px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;   /*header内部使用flex布局，使每个图片横向排列*/
+    justify-content: center;
+    position: fixed;
+    z-index: 0;       /*z-index: 是选择块元素固定在页面上的顺序*/
+}
+
+.footer{
+    border: 0px solid palevioletred;
+    width: 1000px;
+    height: 2000px;
+    margin: 0 auto;
+}
+.search{
+    margin: 0 auto;
+    height: 20px;
+    width: 150px;
+    line-height: 45px;   /*直接用line-height对元素进行垂直范围内的调节*/
+}
+.b{
+    margin: 0px 20px 0px 10px;
+    line-height: 45px;
+}
+.left{
+    width: 730px;
+    border: 2px solid aliceblue;
+    float: left;            /*浮动清除文档流*/
+}
+.right{
+    border: 0px solid blue;
+    height: 400px;
+    width: 250px;
+    background-color: snow;
+    position: fixed;
+    z-index: 1;
+    display: inline;    /*display:inline是行内元素 将块级元素div的display设置
+                        为inline则可以使多个div像span一样显示在同一行*/
+                        /*display:inline block 可以使行内标签被当作块元素进行处理 使每一个块排列在同一行 （横向排列）*/
+}
+.image{
+    margin: 0px 20px 0px 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px double pink;
+    overflow: hidden;
+    display: inline-flex;
+}
+.middle{
+    border: 0px solid pink;
+    height: 80px;
+    width: 730px;
+    overflow-x: scroll;    /*为什么设置的是x轴输出的时候既有x轴又有y轴？*/
+    background-color:whitesmoke;
+}
+
+.word1{
+    float: left;
+}
+.word1:hover{
+    content: "";
+    position: relative;
+    color:red;
+    clear: both;
+}
+.photo{
+    float: left;
+}
+.center{
+    float: left;
+}
+.last{
+    float:right;
+    margin: 10px 20px;
+    color: cornflowerblue;
+}
+.color{
+    font-size: x-small;
+    color: grey;
+}
+.color:hover{
+    content: "";
+    position: relative;
+    border-bottom: 2px solid red;
+}
+.word{
+    font-size: xx-small;
+    color: rgba(128, 128, 128, 0.397);
+}
+.file{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: blue;
+    
+}
+.name{
+    overflow: hidden;             /*如何清除浮动：在浮动元素后使用一个空元素如<div class="clear"></div> 并在css中赋值属性.clear{clear:both}*/
+                                  /*或者在浮动元素的容器的css中使用overflow:hidden*/
+
+}
+.zoom1{
+    float: left;
+    font-size: larger;
+    color: darkgray;
+    margin: 10px;
+}
+.zoom2{
+    float: right;
+    font-size: smaller;
+    margin: 10px;
+    font-weight: 900;
+}
+
+
 .zoom2{
     float: right;
     font-size: smaller;
